@@ -1,7 +1,5 @@
 library dream_helper;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'helpers/helper.dart';
+export 'view_models/view_model.dart';
+export 'widgets/widgets.dart';
