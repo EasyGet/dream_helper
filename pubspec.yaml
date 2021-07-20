@@ -1,7 +1,7 @@
 name: dream_helper
-description: A new Flutter project.
+description: help to make a colorful dream!
 version: 0.0.1
-homepage:
+homepage: https://github.com/EasyGet/dream_helper
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -10,11 +10,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  dio: ^4.0.0
   provider: ^5.0.0
-  flutter_boost:
-    git:
-      url: 'https://github.com/alibaba/flutter_boost.git'
-      ref: 'v3.0-preview.7'
+#  flutter_boost:
+#    git:
+#      url: 'https://github.com/alibaba/flutter_boost.git'
+#      ref: 'v3.0-preview.7'
 
 dev_dependencies:
   flutter_test:
