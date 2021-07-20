@@ -11,8 +11,10 @@ dependencies:
   flutter:
     sdk: flutter
 
+  connectivity: ^3.0.6
   dio: ^4.0.0
   provider: ^5.0.0
+  shared_preferences: ^2.0.6
 #  flutter_boost:
 #    git:
 #      url: 'https://github.com/alibaba/flutter_boost.git'

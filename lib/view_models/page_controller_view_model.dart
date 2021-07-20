@@ -2,26 +2,28 @@
 /// package: dream_helper
 ///
 /// fileName: page_controller_view_model.dart
-/// TODO: Description of the file
+/// PageControllerViewModel
 ///
 /// author mario
 /// created 2021/7/19
-import 'package:flutter/cupertino.dart' show ChangeNotifier, PageController;
+import 'package:flutter/cupertino.dart' show PageController;
+
+import 'controller_view_model.dart';
 
 /// PageControllerViewModel
-class PageControllerViewModel extends ChangeNotifier {
-  ///
-  PageController _pageController;
+class PageControllerViewModel extends ControllerViewModel<PageController> {
 
-  /// construct with [_pageController]
-  PageControllerViewModel(this._pageController);
+  /// construct with [pageController]
+  PageControllerViewModel(PageController pageController) : super(pageController);
 
-  int get page => _pageController.page != null ? _pageController.page!.round() : 0;
+  /// 获取当前page索引
+  int get page =>
+      this.scrollController.page != null ? scrollController.page!.round() : 0;
 
   /// [_pageController] jump to [page]
   /// and notify listener
   void changePage(int page) {
-    _pageController.jumpToPage(page);
+    scrollController.jumpToPage(page);
     notifyListeners();
   }
 }
