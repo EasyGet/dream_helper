@@ -10,7 +10,7 @@ class ControllerViewModel<T extends ScrollController> extends ChangeNotifier {
   T scrollController;
 
   /// construct
-  ControllerViewModel(this.scrollController): this.offset = scrollController.offset;
+  ControllerViewModel(this.scrollController);
 
   /// 跳转
   void changeOffset(double offset) {
