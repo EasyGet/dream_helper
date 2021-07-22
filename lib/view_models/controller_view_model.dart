@@ -1,8 +1,8 @@
-import 'package:flutter/cupertino.dart' show ScrollController, ChangeNotifier, Curves;
+import 'package:flutter/cupertino.dart'
+    show ScrollController, ChangeNotifier, Curves;
 
 ///
 class ControllerViewModel<T extends ScrollController> extends ChangeNotifier {
-
   /// 位移
   double offset = 0;
 

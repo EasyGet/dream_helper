@@ -1,6 +1,6 @@
 ///
 /// package: dream_helper
-/// 
+///
 /// fileName: request_status.dart
 /// 网络请求状态
 ///
@@ -9,7 +9,6 @@
 
 /// 网络请求状态
 enum RequestStatus {
-
   /// 无状态
   none,
 
